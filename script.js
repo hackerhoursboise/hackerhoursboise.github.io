@@ -13,8 +13,21 @@ function getTime(){
     
 
     $(".content").append('<p> next meeting on '+ d.toString() +'</p>');
-  
+    countDown(time)
   })
 }
 
 
+function countDown(time){
+	var nextMeetUp = time,
+	    seconds = Math.floor((nextMeetup - new Date().getTime()) / 1000),
+	    minutes = Math.floor(seconds / 60),
+	    seconds = seconds - (minutes * 60),
+	    hours = Math.floor(minutes / 60),
+	    minutes = minutes - (hours * 60),
+	    days = Math.floor(hours / 24),
+	    hours = hours - (days * 24);
+	setInterval(function() {
+	document.getElementById('timer').innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+	}, 1000)
+}
