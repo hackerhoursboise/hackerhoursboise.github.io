@@ -13,8 +13,9 @@ function getTime(){
     
 
     $(".content").append('<p> next meeting on '+ d.toString() +'</p>');
-    countDown(time)
+   
   })
+   countDown(time);
 }
 
 
