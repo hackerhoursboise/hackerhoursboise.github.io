@@ -30,7 +30,14 @@ function countDown(apiTime){
 	    minutes = minutes - (hours * 60),
 	    days = Math.floor(hours / 24),
 	    hours = hours - (days * 24);
-	document.getElementById('timer').innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+	if (nextMeetUp < new Date().getTime()) {
+			document.getElementById('timer').innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+		}
+		else { 
+				document.getElementById('timer').innerHTML = "In Progress! It's not too late to say hello!";
+			}
+
+		}
 	}, 1000)
 }
 
