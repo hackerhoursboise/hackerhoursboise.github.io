@@ -37,7 +37,7 @@ function countDown(apiTime){
 				document.getElementById('timer').innerHTML = "In Progress! It's not too late to say hello!";
 			}
 
-		}
+		
 	}, 1000)
 }
 
