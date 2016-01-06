@@ -30,7 +30,7 @@ function countDown(apiTime){
 	    minutes = minutes - (hours * 60),
 	    days = Math.floor(hours / 24),
 	    hours = hours - (days * 24);
-	if (nextMeetUp < new Date().getTime()) {
+	if (nextMeetUp >= new Date().getTime()) {
 			document.getElementById('timer').innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
 		}
 		else { 
