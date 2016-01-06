@@ -21,9 +21,9 @@ function countDown(apiTime){
     
     $(".content").append('<p> next meeting on '+ d.toString() +'</p>');
   
-	var nextMeetUp = time,
+	var nextMeetUp = time;
 	setInterval(function() {
-		seconds = Math.floor((nextMeetUp - new Date().getTime()) / 1000),
+		var seconds = Math.floor((nextMeetUp - new Date().getTime()) / 1000),
 	    minutes = Math.floor(seconds / 60),
 	    seconds = seconds - (minutes * 60),
 	    hours = Math.floor(minutes / 60),
