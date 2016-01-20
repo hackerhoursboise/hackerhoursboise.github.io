@@ -10,6 +10,11 @@ function getTime(){
 	var utcSeconds = parseInt(time);
     var d = new Date(time); 
     //alert(d.toString());
-    $(".daycontent").append('<p> next meeting on '+ d.toString() +'</p>');
+    
+
+    $(".content").append('<p> next meeting on '+ d.toString() +'</p>');
+  
   })
 }
+
+
