@@ -18,11 +18,12 @@
   color: #f12727
 }*/
 .container {
-    background-color: #F03B88;
+    background-color: #ba9388;
 }
 
 body {
-    background-color: black;
+    background-color: #5a2d20;
+    color: #fff;
 }
 
 #groupshot {
@@ -31,20 +32,20 @@ body {
 .daycontent {
     margin: auto;
     width: 100%;
-    border: 5px solid black;
+    border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
-    background-color:#FF8A00;
+    background-color:#64433a;
 }
 
 #intro {
-    background-color: #FF8A00;
+    background-color: #5a2d20;
 }
 #meetbutton {
     background-color: black;
     border: gray;
 }
-m
+
 .showmap {
     margin: auto;
     width: 98%;
@@ -54,7 +55,26 @@ m
     position: relative;
     width: 100%;
     height: 100%;
-    background-color: #FF8A00;
+    background-color: #5a2d20;
     background-size: cover;
     overflow: hidden;
+}
+#timer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:#64433a;
+    font-weight: bold; 
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+    
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:#64433a;
+    font-weight: bold; 
+    font-size: 16px;
+    margin-bottom: 10px;
 }

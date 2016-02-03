@@ -19,7 +19,7 @@ function countDown(apiTime){
     var d = new Date(time); 
     //alert(d.toString());
     
-    $(".content").append('<p> next meeting on '+ d.toString() +'</p>');
+    $(".content").append('<p> Our next meeting on '+ d.toString() +'</p>');
   
 	var nextMeetUp = time;
 	setInterval(function() {
@@ -34,7 +34,7 @@ function countDown(apiTime){
 			document.getElementById('timer').innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
 		}
 		else { 
-				document.getElementById('timer').innerHTML = "In Progress! It's not too late to say hello!";
+				document.getElementById('timer').innerHTML = "Hacker Hours is  happening now! Come on down and join us.";
 			}
 
 		
