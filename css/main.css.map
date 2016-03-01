@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAKA,IAAK;EACH,SAAS,ECoBS,IAAI;EDnBtB,WAAW,EAAE,GAA8B;EAC3C,WAAW,ECLW,kCAAkC;EDMxD,WAAW,ECHS,GAAG;EDIvB,UAAU,ECDO,MAAM",
+"sources": ["../scss/1-base/_base.scss","../scss/1-base/_config.scss"],
+"names": [],
+"file": "main.css"
+}

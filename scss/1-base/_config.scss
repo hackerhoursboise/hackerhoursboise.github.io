@@ -1,0 +1,55 @@
+// Global Config ==============================
+
+// Font Stacks
+$font-family--primary : "abril-titling", "Garamond", serif;
+
+// Font Weights
+$font-weight--medium: 400;
+
+// Font Styles
+$font-style--base: normal;
+$font-style--secondary: italic;
+
+// Descriptive Base Colors
+$emerald        : #0ab389;
+$darkgray       : #808285;
+$mediumgray      : #939598;
+$white          : #fff;
+
+// Color Usage
+$color-primary    : $emerald;
+$color-secondary  : $darkgray;
+$color-reverse    : $white;
+$color-subtle     : rgba($darkgray, .2);
+$color-light      : $mediumgray;
+
+// Text
+$base__font-size  : 15px;
+$base__line       : 21px;
+
+// Breakpoints
+$brkpoint-sm    : 768px;
+$brkpoint-md    : 992px;
+$brkpoint-lg    : 1200px;
+
+// Media Queries
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $brkpoint-sm ) {
+      @content;
+    }
+  }
+    @else if $break == "medium" {
+    @media (min-width: $brkpoint-md){
+      @content;
+    }
+  }
+     @else if $break == "large" {
+    @media (min-width: $brkpoint-lg) {
+      @content;
+    }
+  }
+     @else {
+      @error "Whoops! No value could be retrieved for '#{$break}'."
+    }
+}

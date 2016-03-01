@@ -1,0 +1,12 @@
+@import "_config.scss";
+@import "_utilities.scss";
+
+// Base Styles ==============================
+
+body {
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
+  font-weight: $font-weight--medium;
+  font-style: $font-style--base;
+}
