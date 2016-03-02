@@ -1,30 +1,28 @@
 // Global Config ==============================
 
 // Font Stacks
-$font-family--primary : "abril-titling", "Garamond", serif;
+$font-family--primary : 'Open Sans', sans-serif;
+$font-family--script : 'Kaushan Script', cursive;
 
 // Font Weights
-$font-weight--medium: 400;
-
-// Font Styles
-$font-style--base: normal;
-$font-style--secondary: italic;
+$font-weight--regular: 400;
+$font-weight--bold: 800;
 
 // Descriptive Base Colors
-$emerald        : #0ab389;
-$darkgray       : #808285;
-$mediumgray      : #939598;
-$white          : #fff;
+$navyBlue       : #023d70;
+$brickRed       : #6d2e3a;
+$darkGray       : #626b71;
+$lightGray      : #e6e6e6;
 
 // Color Usage
-$color-primary    : $emerald;
-$color-secondary  : $darkgray;
-$color-reverse    : $white;
-$color-subtle     : rgba($darkgray, .2);
-$color-light      : $mediumgray;
+$color-base                 : $darkGray;
+$color-base--light          : $lightGray;
+$color-accent--primary      : $navyBlue;
+$color-accent--secondary    : $brickRed;
+$color-accent--primarylight : rgba($navyBlue;, .3);
 
 // Text
-$base__font-size  : 15px;
+$base__font-size  : 16.5px;
 $base__line       : 21px;
 
 // Breakpoints
