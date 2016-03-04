@@ -62,6 +62,11 @@ dt {
 .col--top {
   margin-top: 0; }
 
+.toFront {
+  z-index: 100;
+  position: relative;
+  top: 300px; }
+
 nav {
   padding-top: 1.51515em; }
   nav li a {
@@ -156,5 +161,63 @@ nav {
   width: 73px;
   background-image: url("../images/projects__dropcap.png");
   background-repeat: no-repeat; }
+
+#contact {
+  margin-top: 150px;
+  height: 67.39394em;
+  background-image: url("../images/contact__background--LG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  #contact h1 {
+    text-align: center; }
+  #contact .h1__border {
+    margin-right: auto;
+    margin-left: auto; }
+  #contact p {
+    padding-left: 70px; }
+  #contact svg {
+    width: 100%;
+    position: relative;
+    bottom: 12.12121em; }
+  #contact .align--right {
+    padding-right: 10px; }
+  #contact .align--left {
+    padding-left: 10px; }
+
+.contact__graphic {
+  position: relative;
+  margin: 0 auto;
+  max-width: 756px;
+  width: 90%; }
+  .contact__graphic a {
+    display: block;
+    height: 48.5px;
+    width: 229px;
+    border: 2pt solid #023d70;
+    color: #6d2e3a;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 0;
+    letter-spacing: 3px;
+    font-weight: 800;
+    margin-top: 4px; }
+
+.highlight {
+  font-weight: 800; }
+
+.showmap {
+  margin: auto;
+  width: 234px;
+  height: 234px;
+  border: 1px solid #fff; }
+
+#footer {
+  background-color: #6d2e3a;
+  color: #fff;
+  text-align: center;
+  height: 61px; }
+  #footer p {
+    padding-top: 20px; }
 
 /*# sourceMappingURL=main.css.map */

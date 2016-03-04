@@ -34,3 +34,9 @@
 .col--top {
   margin-top: 0;
 }
+
+.toFront {
+  z-index: 100;
+  position: relative;
+  top: 300px;
+}

@@ -101,7 +101,7 @@ nav {
   }
 }
 
-// About ==============================
+// Dropcaps ==============================
 
 #about {
   .dropcap {
@@ -122,5 +122,88 @@ nav {
     width: 73px;
     background-image: url("../images/projects__dropcap.png");
     background-repeat: no-repeat;
+  }
+}
+
+// Contact ==============================
+
+#contact {
+  margin-top: 150px;
+  height: em(1112px);
+  background-image: url("../images/contact__background--LG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  h1 {
+    text-align: center;
+  }
+
+  .h1__border {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  p {
+    padding-left: 70px;
+  }
+
+  svg {
+    width: 100%;
+    position: relative;
+    bottom: em(200px);
+  }
+
+  .align--right {
+    padding-right: 10px;
+  }
+
+  .align--left {
+    padding-left: 10px;
+  }
+}
+
+.contact__graphic {
+  position: relative;
+  margin: 0 auto;
+  max-width: 756px;
+  width: 90%;
+
+  a {
+    display: block;
+    height: 48.5px;
+    width: 229px;
+    border: 2pt solid $color-accent--primary;
+    color: $color-accent--secondary;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 0;
+    letter-spacing: 3px;
+    font-weight: $font-weight--bold;
+    margin-top: 4px;
+  }
+}
+
+.highlight {
+  font-weight: $font-weight--bold;
+}
+
+.showmap {
+    margin: auto;
+    width: 234px;
+    height: 234px;
+    border: 1px solid #fff;
+}
+
+// Footer ==============================
+
+#footer {
+  background-color: $color-accent--secondary;
+  color: #fff;
+  text-align: center;
+  height: 61px;
+
+  p {
+    padding-top: 20px;
   }
 }
