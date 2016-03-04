@@ -1,8 +1,114 @@
 body {
-  font-size: 15px;
-  line-height: 1.4;
-  font-family: "abril-titling", "Garamond", serif;
+  font-size: 16.5px;
+  line-height: 1.27273;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-style: normal; }
+  background-color: #fff; }
+
+h1 {
+  font-size: 3.09091em;
+  font-weight: 800;
+  color: #023d70;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 3.27273em;
+  font-weight: 800;
+  color: rgba(2, 61, 112, 0.3); }
+
+h3 {
+  font-size: 2em;
+  color: #023d70;
+  font-family: "Kaushan Script", cursive; }
+
+dd {
+  font-size: 1.09091em;
+  color: #023d70;
+  font-weight: 800; }
+
+.intro__image {
+  border: 2pt solid #e6e6e6;
+  padding: 0.60606em;
+  display: block;
+  margin: 100px auto; }
+
+nav {
+  padding-top: 1.51515em; }
+  nav li a {
+    color: #fff;
+    font-size: 0.84848em;
+    text-transform: uppercase; }
+
+.navbar-brand {
+  display: block;
+  background-image: url("../images/logo--icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 2.24242em;
+  position: relative;
+  top: 7px;
+  left: 15px; }
+
+.icon-bar {
+  background-color: #fff; }
+
+#home {
+  height: 67.39394em;
+  background-image: url("../images/home__background--LG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  #home .home__graphic {
+    position: relative;
+    margin: 0 auto;
+    max-width: 756px;
+    width: 90%; }
+    #home .home__graphic a {
+      display: block;
+      margin: 0 auto;
+      height: 48.5px;
+      width: 229px;
+      border: 2pt solid #023d70;
+      color: #6d2e3a;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 12px 0;
+      letter-spacing: 3px;
+      font-weight: 800;
+      position: relative;
+      bottom: 430px; }
+  #home img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 300px;
+    z-index: 100; }
+  #home h1 {
+    font-family: "Kaushan Script", cursive;
+    text-transform: none;
+    font-size: 2.18182em;
+    text-align: center;
+    position: relative;
+    top: 300px;
+    z-index: 100;
+    padding-top: 20px; }
+  #home h2 {
+    font-size: 1.09091em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #023d70;
+    letter-spacing: 3px;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    top: 300px; }
+    #home h2 span {
+      color: #6d2e3a;
+      font-weight: 800; }
+  #home svg {
+    width: 100%;
+    position: relative;
+    bottom: 12.12121em; }
 
 /*# sourceMappingURL=main.css.map */

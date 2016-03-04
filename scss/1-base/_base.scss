@@ -8,4 +8,30 @@ body {
   line-height: ($base__line/$base__font-size);
   font-family: $font-family--primary;
   font-weight: $font-weight--regular;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: em(51px);
+  font-weight: $font-weight--bold;
+  color: $color-accent--primary;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: em(54px);
+  font-weight: $font-weight--bold;
+  color: $color-accent--primarylight;
+}
+
+h3 {
+  font-size: em(33px);
+  color: $color-accent--primary;
+  font-family: $font-family--script;
+}
+
+dd {
+  font-size: em(18px);
+  color: $color-accent--primary;
+  font-weight: $font-weight--bold;
 }

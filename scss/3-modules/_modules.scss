@@ -1,0 +1,109 @@
+// Navigation ==============================
+
+nav {
+  padding-top: em(25px);
+
+  li a {
+    color: #fff;
+    font-size: em(14px);
+    text-transform: uppercase;
+  }
+}
+
+.navbar-brand {
+  display: block;
+  background-image: url("../images/logo--icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: em(37px);
+  position: relative;
+  top: 7px;
+  left: 15px;
+}
+
+.icon-bar {
+  background-color: #fff;
+}
+
+// Home ==============================
+
+#home {
+  height: em(1112px);
+  background-image: url("../images/home__background--LG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .home__graphic {
+    position: relative;
+    margin: 0 auto;
+    max-width: 756px;
+    width: 90%;
+
+    a {
+      display: block;
+      margin: 0 auto;
+      height: 48.5px;
+      width: 229px;
+      border: 2pt solid $color-accent--primary;
+      color: $color-accent--secondary;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 12px 0;
+      letter-spacing: 3px;
+      font-weight: $font-weight--bold;
+      position: relative;
+      bottom: 430px;
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 300px;
+    z-index: 100;
+  }
+
+  h1 {
+    font-family: $font-family--script;
+    text-transform: none;
+    font-size: em(36px);
+    text-align: center;
+    position: relative;
+    top: 300px;
+    z-index: 100;
+    padding-top: 20px;
+  }
+
+  h2 {
+    font-size: em(18px);
+    font-weight: $font-weight--regular;
+    text-transform: uppercase;
+    color: $color-accent--primary;
+    letter-spacing: 3px;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    top: 300px;
+
+    span {
+      color: $color-accent--secondary;
+      font-weight: $font-weight--bold;
+    }
+  }
+
+  svg {
+    width: 100%;
+    position: relative;
+    bottom: em(200px);
+  }
+}
+
+// About ==============================
+
+#about {
+
+
+}

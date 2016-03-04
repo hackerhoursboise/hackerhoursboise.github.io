@@ -22,8 +22,10 @@
     <!-- Custom styles for this template -->
     <link href="jumbotron-narrow.css" rel="stylesheet">
 
-    <!-- CSS from Sass files -->
-    <link href="css/main.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,800' rel='stylesheet' type='text/css'>
+
+
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -35,51 +37,177 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-              <link href="stylesheet.css" type="text/css" rel="stylesheet">
+      <!-- <link href="stylesheet.css" type="text/css" rel="stylesheet"> -->
+
+      <!-- CSS from Sass files -->
+      <link href="css/main.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
-          </ul>
+
+      <!-- Home -->
+      <div id="home">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand text-hide" href="#">Hacker Hours Boise</a>
+              </div> <!--/.navbar-header -->
+
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div> <!--/.navbar-collapse -->
+          </div> <!--/.container -->
         </nav>
-        <h3>Improve your coding, improve the world</h3>
+
+        <div class="home__graphic">
+          <img src="images/logo--full.png" alt="Hacker Hours Logo">
+          <h1>Learn, Grow, Teach, Code</h1>
+          <h2 id="timer">Next Meetup: Calculating...</h2>
+
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 798 792" style="enable-background:new 0 0 798 792;" xml:space="preserve">
+              <g id="frame__circle">
+                  <circle style="opacity:0.7;fill:#FFFFFF;" cx="399" cy="396" r="351.58"/>
+                  <circle style="opacity:0.7;fill:none;stroke:#FFFFFF;stroke-width:19;stroke-miterlimit:10;" cx="399" cy="396" r="377.72"/>
+              </g>
+          </svg>
+
+          <a href="http://www.meetup.com/hackerhoursboise/">Join Us!</a>
+
+        </div> <!--/.home__graphic -->
+      </div> <!--/#home -->
+
+
+      <!-- About -->
+      <div id="about">
+
+        <img class="intro__image" src="images/about__introimage.jpg" alt="Group Photo">
+
+        <h1>About</h1>
+        <h2>Free Office Hours for Programming Help in Boise, Idaho</h2>
+        <p><span>W</span>e're a diverse group of web developers and programmers of varying skill levels. We meet up to learn, to teach and to help each other with projects. We believe even advanced developers can learn from beginners in the fast-moving world of development—everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to teach and learn so come on down!</p>
+        <h3>Why Code?</h3>
+        <p>We believe even advanced developers can learn from beginners in the fast-moving world of development—everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to learn.</p>
+        <h3>The Boise Code Community</h3>
+        <p>We believe even advanced developers can learn from beginners in the fast-moving world of development—everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to learn.</p>
+
+      </div> <!--/#about -->
+
+
+      <!-- Resources -->
+      <div id="resources">
+
+        <img class="intro__image" src="images/resources__introimage.jpg" alt="Close-up of hands on a laptop coding.">
+
+        <h1>Resources</h1>
+        <h2>Beef Up Your Coding Skills Online at Your Own Pace, on Your Own Time</h2>
+        <h3>Beginners</h3>
+        <dl>
+          <dt>Resource #1</dt>
+          <dd>A  brief description of the resource goes here.</br>
+              A brief description of the resource .</dd>
+          <dt>Resource #2</dt>
+          <dd>A  brief description of the resource goes here.</br>
+              A brief description of the resource .</dd>
+          <dt>Resource #3</dt>
+          <dd>A  brief description of the resource goes here.</br>
+              A brief description of the resource .</dd>
+        </dl>
+        <h3>Intermediate</h3>
+        <dl>
+          <dt>Resource #1</dt>
+          <dd>A  brief description of the resource goes here.</br>
+              A brief description of the resource .</dd>
+          <dt>Resource #2</dt>
+          <dd>A  brief description of the resource goes here.</br>
+              A brief description of the resource .</dd>
+          <dt>Resource #3</dt>
+          <dd>A  brief description of the resource goes here.</br>
+              A brief description of the resource .</dd>
+        </dl>
+        <h3>Advanced</h3>
+        <dl>
+          <dt>Resource #1</dt>
+          <dd>A  brief description of the resource goes here.</br>
+              A brief description of the resource .</dd>
+          <dt>Resource #2</dt>
+          <dd>A  brief description of the resource goes here.</br>
+              A brief description of the resource .</dd>
+        </dl>
+      </div> <!--/#about -->
+
+
+      <!-- Projects -->
+      <div id="projects">
+
+        <img class="intro__image" src="images/projects__introimage.jpg" alt="Close-up of hands on a laptop coding.">
+
+        <h1>Projects</h1>
+        <h2>Ready for Some Action? Help Us Tackle One of Our Team Projects</h2>
+        <p><span>O</span>ne of our goals at Hacker Hours is to put our coding skills to use. We’re always looking for contributers, as well as ideas for new projects for non-profits or other good causes. If you’d like to join one of our projects listed below, or have an idea for a new project, please contact us.</p>
+        <h3>Hacker Hours Website</h3>
+        <dl>
+          <dt>Description</dt>
+          <dd>We’re building the official website for Hacker Hours in Boise.
+          <dt>Skills Needed</dt>
+          <dd>The site is beingt built using a combination of HTML5, CSS3, JavaScript, jQuery, and the Bootstrap framework.</dd>
+        </dl>
+        <h3>Future Project #1</h3>
+        <dl>
+          <dt>Description</dt>
+          <dd>We’re building the official website for Hacker Hours in Boise.
+          <dt>Skills Needed</dt>
+          <dd>The site is beingt built using a combination of HTML5, CSS3, JavaScript, jQuery, and the Bootstrap framework.</dd>
+        </dl>
+        <h3>Future Project #2</h3>
+        <dl>
+          <dt>Description</dt>
+          <dd>We’re building the official website for Hacker Hours in Boise.
+          <dt>Skills Needed</dt>
+          <dd>The site is beingt built using a combination of HTML5, CSS3, JavaScript, jQuery, and the Bootstrap framework.</dd>
+        </dl>
+
+      </div> <!--/#projects -->
+
+
+      <!-- Contact -->
+      <div id="contact">
+
+        <h1>Contact</h1>
+        <h3>We're on Meetup!</h3>
+        <p>As of now the most convenient way for us to organize events and recruite new members is through our Meetup group. We meet Tuesday evenings from 6:30–9:30 pm. at the Boise Public Library on Capitol.</p>
+
+        <a href="http://www.meetup.com/hackerhoursboise/">Join Us!</a>
+
+      </div> <!--/#contact -->
+
+
+      <!-- Footer -->
+      <div id="footer">
+        <p>Hacker Hours Meetings: Tuesdays at 6:30, at the Boise Public Library: 715 S Capitol Blvd, Boise, ID 83702</p>
       </div>
 
-      <div class="jumbotron" background-color="#FF8A00">
-          <div class="container"></div>
-        <h2>Hacker Hours Boise: Learn, teach, grow</h2>
-          <img src="images/group_1.jpg" id="groupshot"></img>
-        <p class="lead">Main library 715 S. Capitol Blvd. Boise, ID 83702</p>
-          <div id="intro"> We're a diverse group of web developers and programmers of varying skill levels. We meet up to learn, to teach and to help each other with projects. We believe even advanced developers can learn from beginners and in the fast-moving world of development, everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to teach and learn so come on down!</div></p>
-        <p><a class="btn btn-lg btn-success" role="button" id="meetbutton" href="http://www.meetup.com/hackerhoursboise/">Find us on Meetup also!</a></p>
-      </div>
-    <div class="daycontent">
-        <h4>Regular meetings</h4>
-          <p>Every Tuesday from 6:30 to 9 p.m., Boise Public Library downtown branch</p>
+
+
         <script>getTime();</script>
         <div id="timer"></div>
-        <div class="content"></div>
             <div class="showmap">
 <iframe class="showmap" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d9717.171696929057!2d-116.21336003912891!3d43.60794848792351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x54aef8e4a14f7779%3A0xaab9a20d60c58679!2sboise+public+library!3m2!1d43.6106227!2d-116.2077284!5e0!3m2!1sen!2sus!4v1450838794184"></iframe>
         </div>
-          <h4>Organizers</h4>
-          <p>Craig Kofoed, Organizer and Dave Hooper, Co-Organizer</p>
-        </div>
-        <div class="col-lg-6">
-      <footer class="footer">
-</div>
-      </div>
-
-      </footer>
-
-    </div> <!-- /container -->
 
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->

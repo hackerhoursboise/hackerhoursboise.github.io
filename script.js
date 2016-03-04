@@ -1,13 +1,13 @@
 function getTime(){
- var apiTime = $.getJSON('https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=hackerhoursboise&only=time&photo-host=public&page=1&fields=&order=time&desc=false&status=upcoming&sig_id=4397595&sig=d0f2e99cd0a29d2587e937191612dcc0c903c5ba&callback=?') 
+ var apiTime = $.getJSON('https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=hackerhoursboise&only=time&photo-host=public&page=1&fields=&order=time&desc=false&status=upcoming&sig_id=4397595&sig=d0f2e99cd0a29d2587e937191612dcc0c903c5ba&callback=?')
 
  	apiTime.done(countDown).fail(handleErr);
-   
+
 }
 
 
 function countDown(apiTime){
-	 
+
     var dataArray = apiTime.results[0];
     var time;
     $.each(dataArray, function(key, value){
@@ -16,11 +16,11 @@ function countDown(apiTime){
     })
 	//result();
 	var utcSeconds = parseInt(time);
-    var d = new Date(time); 
+    var d = new Date(time);
     //alert(d.toString());
-    
+
     $(".content").append('<p> Our next meeting on '+ d.toString() +'</p>');
-  
+
 	var nextMeetUp = time;
 	setInterval(function() {
 		var seconds = Math.floor((nextMeetUp - new Date().getTime()) / 1000),
@@ -31,13 +31,17 @@ function countDown(apiTime){
 	    days = Math.floor(hours / 24),
 	    hours = hours - (days * 24);
 	if (nextMeetUp >= new Date().getTime()) {
-			document.getElementById('timer').innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+    document.getElementById('timer').innerHTML = "Next Meetup: <span>" + days + "</span> Days <span>" + hours + "</span> Hours <span>" +  minutes + "</span> Minutes";
+			//document.getElementById('timer').innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
+
+      //"Next Meetup: <span>" days "</span> Days <span>" hours "</span> Hours <span>" minutes "</span> Minutes"
+      // Next Meetup: <span>2</span> Days <span>5</span> Hours <span>43</span> Minutes
 		}
-		else { 
+		else {
 				document.getElementById('timer').innerHTML = "Hacker Hours is  happening now! Come on down and join us.";
 			}
 
-		
+
 	}, 1000)
 }
 
