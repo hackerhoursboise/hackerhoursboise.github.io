@@ -29,9 +29,30 @@ function countDown(apiTime){
 	    hours = Math.floor(minutes / 60),
 	    minutes = minutes - (hours * 60),
 	    days = Math.floor(hours / 24),
-	    hours = hours - (days * 24);
+	    hours = hours - (days * 24),
+
+      dayText = " ",
+      hourText = " ",
+      minuteText = " ";
+
+  if (days === 1) {
+    dayText = "day";
+  } else {
+    dayText = "days";
+  }
+  if (hours === 1) {
+    hourText = "hour";
+  } else {
+    hourText = "hours";
+  }
+  if (minutes === 1) {
+    minuteText = "minute";
+  } else {
+    minuteText = "minutes";
+  }
+
 	if (nextMeetUp >= new Date().getTime()) {
-    document.getElementById('timer').innerHTML = "Next Meetup: <span>" + days + "</span> Days <span>" + hours + "</span> Hours <span>" +  minutes + "</span> Minutes";
+    document.getElementById('timer').innerHTML = "Next Meetup: <span>" + days + "</span> " + dayText + " <span>" + hours + "</span> " + hourText + " <span>" +  minutes + "</span> " + minuteText;
 		}
 		else {
 				document.getElementById('timer').innerHTML = "Hacker Hours is  happening now! Come on down and join us.";
