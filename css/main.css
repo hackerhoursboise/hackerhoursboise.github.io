@@ -3,7 +3,8 @@ body {
   line-height: 1.27273;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  background-color: #fff; }
+  background-color: #fff;
+  color: #626b71; }
 
 h1 {
   font-size: 3.09091em;
@@ -12,16 +13,21 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font-size: 3.27273em;
+  font-size: 3.09091em;
   font-weight: 800;
-  color: rgba(2, 61, 112, 0.3); }
+  color: rgba(2, 61, 112, 0.3);
+  text-transform: uppercase;
+  line-height: 1.5; }
 
 h3 {
   font-size: 2em;
   color: #023d70;
-  font-family: "Kaushan Script", cursive; }
+  font-family: "Kaushan Script", cursive;
+  margin-top: 40px; }
+  h3.optical--left {
+    margin-left: -3px; }
 
-dd {
+dt {
   font-size: 1.09091em;
   color: #023d70;
   font-weight: 800; }
@@ -31,6 +37,30 @@ dd {
   padding: 0.60606em;
   display: block;
   margin: 100px auto; }
+
+.align--right {
+  text-align: right;
+  padding-right: 50px; }
+
+.align--left {
+  padding-left: 50px; }
+
+.h1__border {
+  width: 287px;
+  height: 112px;
+  border-top: 2px solid #6d2e3a;
+  border-bottom: 2px solid #6d2e3a;
+  margin-bottom: 30px; }
+
+.float--right {
+  float: right;
+  padding: 5px 0 0 0; }
+
+.float--left {
+  padding: 5px 0 0 0; }
+
+.col--top {
+  margin-top: 0; }
 
 nav {
   padding-top: 1.51515em; }
@@ -110,5 +140,21 @@ nav {
     width: 100%;
     position: relative;
     bottom: 12.12121em; }
+
+#about .dropcap {
+  display: block;
+  float: left;
+  height: 82px;
+  width: 94px;
+  background-image: url("../images/about__dropcap.png");
+  background-repeat: no-repeat; }
+
+#projects .dropcap {
+  display: block;
+  float: left;
+  height: 82px;
+  width: 73px;
+  background-image: url("../images/projects__dropcap.png");
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,3 +4,33 @@
   display: block;
   margin: 100px auto;
 }
+
+.align--right {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.align--left {
+  padding-left: 50px;
+}
+
+.h1__border {
+  width: 287px;
+  height: 112px;
+  border-top: 2px solid $color-accent--secondary;
+  border-bottom: 2px solid $color-accent--secondary;
+  margin-bottom: 30px;
+}
+
+.float--right {
+  float: right;
+  padding: 5px 0 0 0;
+}
+
+.float--left {
+  padding: 5px 0 0 0;
+}
+
+.col--top {
+  margin-top: 0;
+}

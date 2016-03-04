@@ -32,10 +32,6 @@ function countDown(apiTime){
 	    hours = hours - (days * 24);
 	if (nextMeetUp >= new Date().getTime()) {
     document.getElementById('timer').innerHTML = "Next Meetup: <span>" + days + "</span> Days <span>" + hours + "</span> Hours <span>" +  minutes + "</span> Minutes";
-			//document.getElementById('timer').innerHTML = days + ":" + hours + ":" + minutes + ":" + seconds;
-
-      //"Next Meetup: <span>" days "</span> Days <span>" hours "</span> Hours <span>" minutes "</span> Minutes"
-      // Next Meetup: <span>2</span> Days <span>5</span> Hours <span>43</span> Minutes
 		}
 		else {
 				document.getElementById('timer').innerHTML = "Hacker Hours is  happening now! Come on down and join us.";

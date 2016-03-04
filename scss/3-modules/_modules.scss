@@ -104,6 +104,23 @@ nav {
 // About ==============================
 
 #about {
+  .dropcap {
+    display: block;
+    float: left;
+    height: 82px;
+    width: 94px;
+    background-image: url("../images/about__dropcap.png");
+    background-repeat: no-repeat;
+  }
+}
 
-
+#projects {
+  .dropcap {
+    display: block;
+    float: left;
+    height: 82px;
+    width: 73px;
+    background-image: url("../images/projects__dropcap.png");
+    background-repeat: no-repeat;
+  }
 }

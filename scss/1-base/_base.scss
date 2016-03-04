@@ -9,6 +9,7 @@ body {
   font-family: $font-family--primary;
   font-weight: $font-weight--regular;
   background-color: #fff;
+  color: $color-base;
 }
 
 h1 {
@@ -19,18 +20,29 @@ h1 {
 }
 
 h2 {
-  font-size: em(54px);
+  font-size: em(51px);
   font-weight: $font-weight--bold;
   color: $color-accent--primarylight;
+  text-transform: uppercase;
+  line-height: 1.5;
 }
 
 h3 {
   font-size: em(33px);
   color: $color-accent--primary;
   font-family: $font-family--script;
+  margin-top: 40px;
+
+  &.optical--left {
+    margin-left: -3px;
+  }
+
+
+
+
 }
 
-dd {
+dt {
   font-size: em(18px);
   color: $color-accent--primary;
   font-weight: $font-weight--bold;
