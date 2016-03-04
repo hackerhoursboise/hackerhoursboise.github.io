@@ -32,11 +32,35 @@ dt {
   color: #023d70;
   font-weight: 800; }
 
+.terminal {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #e6e6e6;
+  background-color: #e6e6e6;
+  position: absolute;
+  left: 49.65%; }
+  .terminal--top {
+    top: 990px; }
+  .terminal--bottom {
+    top: 5390px; }
+
+.divider {
+  width: 0;
+  border-right: 2px dashed #e6e6e6;
+  height: 4400px;
+  position: absolute;
+  left: 50%;
+  top: 1000px; }
+
 .intro__image {
   border: 2pt solid #e6e6e6;
   padding: 0.60606em;
   display: block;
-  margin: 100px auto; }
+  margin: 100px auto;
+  position: relative;
+  z-index: 200;
+  background-color: #fff; }
 
 .align--right {
   text-align: right;
@@ -65,7 +89,7 @@ dt {
 .toFront {
   z-index: 100;
   position: relative;
-  top: 300px; }
+  top: 320px; }
 
 nav {
   padding-top: 1.51515em; }
@@ -208,7 +232,7 @@ nav {
 
 .showmap {
   margin: auto;
-  width: 234px;
+  width: 224px;
   height: 234px;
   border: 1px solid #fff; }
 

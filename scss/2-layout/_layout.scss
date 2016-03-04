@@ -1,8 +1,39 @@
+.terminal {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid $color-base--light;
+  background-color: $color-base--light;
+  position: absolute;
+  left: 49.65%;
+
+  &--top {
+    top: 990px;
+  }
+
+  &--bottom {
+    top: 5390px;
+  }
+
+}
+
+.divider {
+  width: 0;
+  border-right: 2px dashed $color-base--light;
+  height: 4400px;
+  position: absolute;
+  left: 50%;
+  top: 1000px;
+}
+
 .intro__image {
   border: 2pt solid $color-base--light;
   padding: em(10px);
   display: block;
   margin: 100px auto;
+  position: relative;
+  z-index: 200;
+  background-color: #fff;
 }
 
 .align--right {
@@ -38,5 +69,5 @@
 .toFront {
   z-index: 100;
   position: relative;
-  top: 300px;
+  top: 320px;
 }
