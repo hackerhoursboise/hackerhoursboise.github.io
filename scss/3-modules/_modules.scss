@@ -2,12 +2,18 @@
 
 nav {
   padding-top: em(25px);
+}
 
-  li a {
+
+.navbar-nav li a {
     color: #fff;
     font-size: em(14px);
     text-transform: uppercase;
-  }
+
+    &:hover {
+      color: $color-accent--primary;
+      background-color: initial;
+    }
 }
 
 .navbar-brand {

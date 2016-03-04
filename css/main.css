@@ -93,10 +93,14 @@ dt {
 
 nav {
   padding-top: 1.51515em; }
-  nav li a {
-    color: #fff;
-    font-size: 0.84848em;
-    text-transform: uppercase; }
+
+.navbar-nav li a {
+  color: #fff;
+  font-size: 0.84848em;
+  text-transform: uppercase; }
+  .navbar-nav li a:hover {
+    color: #023d70;
+    background-color: initial; }
 
 .navbar-brand {
   display: block;
