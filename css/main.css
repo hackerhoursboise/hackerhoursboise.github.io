@@ -7,17 +7,29 @@ body {
   color: #626b71; }
 
 h1 {
-  font-size: 3.09091em;
+  font-size: 2.60606em;
   font-weight: 800;
   color: #023d70;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.09091em;
+      text-align: inherit; } }
 
 h2 {
-  font-size: 3.09091em;
+  font-size: 1.81818em;
   font-weight: 800;
   color: rgba(2, 61, 112, 0.3);
   text-transform: uppercase;
-  line-height: 1.5; }
+  line-height: 1.5;
+  padding-bottom: 20px; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2.30303em; } }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 3.09091em; } }
 
 h3 {
   font-size: 2em;
@@ -48,40 +60,67 @@ dt {
 .divider {
   width: 0;
   border-right: 2px dashed #e6e6e6;
-  height: 4400px;
+  height: 5600px;
   position: absolute;
   left: 50%;
   top: 1000px; }
+  @media (min-width: 992px) {
+    .divider {
+      height: 4900px; } }
+  @media (min-width: 1200px) {
+    .divider {
+      height: 4400px; } }
 
 .intro__image {
   border: 2pt solid #e6e6e6;
   padding: 0.60606em;
   display: block;
-  margin: 100px auto;
+  margin: 100px auto 40px;
   position: relative;
   z-index: 200;
-  background-color: #fff; }
+  background-color: #fff;
+  max-width: 948px;
+  width: 96%; }
+  @media (min-width: 768px) {
+    .intro__image {
+      margin: 100px auto; } }
 
 .align--right {
-  text-align: right;
-  padding-right: 50px; }
+  text-align: left; }
+  @media (min-width: 768px) {
+    .align--right {
+      text-align: right;
+      padding-right: 50px; } }
 
-.align--left {
-  padding-left: 50px; }
+@media (min-width: 768px) {
+  .align--left {
+    padding-left: 50px; } }
 
 .h1__border {
   width: 287px;
-  height: 112px;
+  height: 102px;
   border-top: 2px solid #6d2e3a;
-  border-bottom: 2px solid #6d2e3a;
-  margin-bottom: 30px; }
+  border-bottom: 2px solid #6d2e3a; }
+  @media (min-width: 768px) {
+    .h1__border {
+      margin-bottom: 30px;
+      height: 112px; } }
 
 .float--right {
-  float: right;
+  margin: 0 auto 30px;
   padding: 5px 0 0 0; }
+  @media (min-width: 768px) {
+    .float--right {
+      margin-left: 100%;
+      float: right; } }
 
 .float--left {
+  margin: 0 auto 30px;
   padding: 5px 0 0 0; }
+  @media (min-width: 768px) {
+    .float--left {
+      margin-right: 100%;
+      float: left; } }
 
 .col--top {
   margin-top: 0; }
@@ -90,6 +129,11 @@ dt {
   z-index: 100;
   position: relative;
   top: 320px; }
+
+#about,
+#resources,
+#projects {
+  padding: 0 20px; }
 
 nav {
   padding-top: 1.51515em; }
@@ -117,16 +161,23 @@ nav {
   background-color: #fff; }
 
 #home {
-  height: 67.39394em;
+  height: 54.54545em;
   background-image: url("../images/home__background--LG.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
+  @media (min-width: 768px) {
+    #home {
+      height: 67.39394em; } }
   #home .home__graphic {
     position: relative;
     margin: 0 auto;
     max-width: 756px;
-    width: 90%; }
+    width: 100%;
+    bottom: 320px; }
+    @media (min-width: 768px) {
+      #home .home__graphic {
+        bottom: 130px; } }
     #home .home__graphic a {
       display: block;
       margin: 0 auto;
@@ -140,39 +191,58 @@ nav {
       letter-spacing: 3px;
       font-weight: 800;
       position: relative;
-      bottom: 430px; }
+      top: 335px;
+      z-index: 500; }
+      @media (min-width: 768px) {
+        #home .home__graphic a {
+          top: -420px; } }
   #home img {
     display: block;
     margin: 0 auto;
     position: relative;
-    top: 300px;
-    z-index: 100; }
+    top: 360px;
+    z-index: 100;
+    width: 200px; }
+    @media (min-width: 768px) {
+      #home img {
+        top: 340px;
+        width: 220px; } }
   #home h1 {
     font-family: "Kaushan Script", cursive;
     text-transform: none;
-    font-size: 2.18182em;
+    font-size: 1.93939em;
     text-align: center;
     position: relative;
-    top: 300px;
+    top: 340px;
     z-index: 100;
     padding-top: 20px; }
+    @media (min-width: 768px) {
+      #home h1 {
+        font-size: 2.18182em; } }
   #home h2 {
-    font-size: 1.09091em;
+    font-size: 0.9697em;
     font-weight: 400;
     text-transform: uppercase;
     color: #023d70;
-    letter-spacing: 3px;
     text-align: center;
     z-index: 100;
     position: relative;
-    top: 300px; }
+    top: 340px; }
+    @media (min-width: 768px) {
+      #home h2 {
+        font-size: 1.09091em;
+        letter-spacing: 3px; } }
     #home h2 span {
       color: #6d2e3a;
       font-weight: 800; }
   #home svg {
-    width: 100%;
+    min-width: 716px;
     position: relative;
     bottom: 12.12121em; }
+    @media (min-width: 768px) {
+      #home svg {
+        width: 100%;
+        right: inherit; } }
 
 #about .dropcap {
   display: block;

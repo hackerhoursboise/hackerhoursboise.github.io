@@ -50,7 +50,7 @@
       <div id="home">
 
         <!-- Navbar -->
-        <nav class="navbar navbar-fixed-top">
+        <nav class="navbar">
           <div class="container">
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -78,7 +78,7 @@
           <h1>Learn, Grow, Teach, Code</h1>
           <h2 id="timer">Weekly meetups: Tuesdays, 6:30 p.m.</h2>
 
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <svg class="hidden-xs" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 798 792" style="enable-background:new 0 0 798 792;" xml:space="preserve">
               <g id="frame__circle">
                   <circle style="opacity:0.7;fill:#FFFFFF;" cx="399" cy="396" r="351.58"/>
@@ -91,21 +91,21 @@
         </div> <!--/.home__graphic -->
       </div> <!--/#home -->
 
-      <div class="terminal terminal--top"></div>
-      <div class="divider"></div>
-      <div class="terminal terminal--bottom"></div>
+      <div class="terminal terminal--top hidden-xs"></div>
+      <div class="divider hidden-xs"></div>
+      <div class="terminal terminal--bottom hidden-xs"></div>
 
       <!-- About -->
       <div id="about" class= "container">
         <div class="row">
           <img class="intro__image" src="images/about__introimage.jpg" alt="Group Photo">
-          <div class="col-sm-6 align--right">
+          <div class="col-xs-12 col-sm-6 align--right">
             <div class="h1__border float--right col-sm-8 col-sm-offset-4">
               <h1>About</h1>
             </div>
-            <h2>Free Office<br>Hours for Programming Help in<br>Boise, Idaho</h2>
+            <h2 class="hidden-xs">Free Office<br>Hours for Programming Help in<br>Boise, Idaho</h2>
           </div> <!--/.col-sm-6 -->
-          <div class="col-sm-5 align--left">
+          <div class="col-xs-12 col-sm-6 col-md-5 align--left">
             <p><span class="dropcap text-hide">W</span>e're a diverse group of web developers and programmers of varying skill levels. We meet up to learn, to teach and to help each other with projects. We believe even advanced developers can learn from beginners in the fast-moving world of development—everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to teach and learn so come on down!</p>
             <h3 class="optical--left">Why Code?</h3>
             <p>We believe even advanced developers can learn from beginners in the fast-moving world of development—everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to learn.</p>
@@ -124,7 +124,7 @@
             <div class="h1__border float--left">
               <h1>Resources</h1>
             </div>
-            <h2>Beef Up Your Coding Skills Online at Your Own Pace, on Your Own Time</h2>
+            <h2 class="hidden-xs">Beef Up Your Coding Skills Online at Your Own Pace, on Your Own Time</h2>
           </div> <!--/.col-sm-5 -->
           <div class="col-sm-5 col-sm-pull-4 align--right">
             <h3 class="col--top">Beginners</h3>
@@ -173,7 +173,7 @@
             <div class="h1__border float--right col-sm-8 col-sm-offset-4">
               <h1>Projects</h1>
             </div>
-            <h2>Ready for<br>Some Action? Help Us Tackle One of Our<br>Team Projects</h2>
+            <h2 class="hidden-xs">Ready for<br>Some Action? Help Us Tackle One of Our<br>Team Projects</h2>
           </div> <!--/.col-sm-6 -->
           <div class="col-sm-5 align--left">
             <p><span class="dropcap text-hide">O</span>ne of our goals at Hacker Hours is to put our coding skills to use. We’re always looking for contributers, as well as ideas for new projects for non-profits or other good causes. If you’d like to join one of our projects listed below, or have an idea for a new project, please contact us.</p>
@@ -238,7 +238,7 @@
 
       <!-- Footer -->
       <div id="footer">
-        <p>Hacker Hours Meetings: Tuesdays at 6:30, at the Boise Public Library (715 S Capitol Blvd, Boise, ID 83702)</p>
+        <p>Meetings: Tuesdays at 6:30, at the Boise Public Library</p>
       </div>
 
     <script>getTime();</script>

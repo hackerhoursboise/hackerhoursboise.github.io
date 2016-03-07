@@ -13,18 +13,33 @@ body {
 }
 
 h1 {
-  font-size: em(51px);
+  font-size: em(43px);
   font-weight: $font-weight--bold;
   color: $color-accent--primary;
   text-transform: uppercase;
+  text-align: center;
+
+  @include mq(small) {
+    font-size: em(51px);
+    text-align: inherit;
+  }
 }
 
 h2 {
-  font-size: em(51px);
+  font-size: em(30px);
   font-weight: $font-weight--bold;
   color: $color-accent--primarylight;
   text-transform: uppercase;
   line-height: 1.5;
+  padding-bottom: 20px;
+
+  @include mq(small) {
+    font-size: em(38px);
+  }
+
+  @include mq(medium) {
+    font-size: em(51px);
+  }
 }
 
 h3 {
@@ -36,10 +51,6 @@ h3 {
   &.optical--left {
     margin-left: -3px;
   }
-
-
-
-
 }
 
 dt {

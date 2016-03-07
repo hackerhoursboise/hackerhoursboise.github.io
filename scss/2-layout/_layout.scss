@@ -20,46 +20,81 @@
 .divider {
   width: 0;
   border-right: 2px dashed $color-base--light;
-  height: 4400px;
+  height: 5600px;
   position: absolute;
   left: 50%;
   top: 1000px;
+
+  @include mq (medium) {
+    height: 4900px;
+  }
+
+  @include mq (large) {
+    height: 4400px;
+  }
 }
 
 .intro__image {
   border: 2pt solid $color-base--light;
   padding: em(10px);
   display: block;
-  margin: 100px auto;
+  margin: 100px auto 40px;
   position: relative;
   z-index: 200;
   background-color: #fff;
+  max-width: 948px;
+  width: 96%;
+
+  @include mq(small){
+    margin: 100px auto;
+  }
 }
 
 .align--right {
-  text-align: right;
-  padding-right: 50px;
+  text-align: left;
+
+  @include mq(small) {
+    text-align: right;
+    padding-right: 50px;
+  }
 }
 
 .align--left {
-  padding-left: 50px;
+  @include mq(small) {
+    padding-left: 50px;
+  }
 }
 
 .h1__border {
   width: 287px;
-  height: 112px;
+  height: 102px;
   border-top: 2px solid $color-accent--secondary;
   border-bottom: 2px solid $color-accent--secondary;
-  margin-bottom: 30px;
+
+  @include mq(small){
+    margin-bottom: 30px;
+    height: 112px;
+  }
 }
 
 .float--right {
-  float: right;
+  margin: 0 auto 30px;
   padding: 5px 0 0 0;
+
+  @include mq(small) {
+    margin-left: 100%;
+    float: right;
+  }
 }
 
 .float--left {
+  margin: 0 auto 30px;
   padding: 5px 0 0 0;
+
+  @include mq(small) {
+    margin-right: 100%;
+    float: left;
+  }
 }
 
 .col--top {
@@ -70,4 +105,10 @@
   z-index: 100;
   position: relative;
   top: 320px;
+}
+
+#about,
+#resources,
+#projects {
+  padding: 0 20px;
 }
