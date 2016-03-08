@@ -1,9 +1,14 @@
 // Navigation ==============================
 
 nav {
-  padding-top: em(25px);
-}
+  padding: em(15px) em(15px);
+  position: relative;
+  z-index: 1000;
 
+  @include mq(small) {
+    padding: em(25px) 0;
+  }
+}
 
 .navbar-nav li a {
     color: #fff;
@@ -14,23 +19,34 @@ nav {
       color: $color-accent--primary;
       background-color: initial;
     }
+
+    &:focus {
+      background: none;
+    }
 }
+
 
 .navbar-brand {
   display: block;
-  background-image: url("../images/logo--icon.png");
+  background-image: url("../images/logo--iconSprite.png");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background-position: center top;
+  background-size: cover;
   height: em(37px);
   position: relative;
   top: 7px;
   left: 15px;
+  height: 31px;
+  width: 37px;
+  margin: 0 auto;
+
+   &:hover {
+          background-position: center bottom;
+   }
 }
 
-.icon-bar {
-  background-color: #fff;
-}
+
+
 
 // Home ==============================
 
@@ -51,6 +67,8 @@ nav {
     max-width: 756px;
     width: 100%;
     bottom: 320px;
+    height: 800px;
+    // top: 50px;
 
     @include mq(small){
       bottom: 130px;
@@ -169,14 +187,20 @@ nav {
 
 #contact {
   margin-top: 150px;
-  height: em(1112px);
-  background-image: url("../images/contact__background--LG.jpg");
+  height: em(700px);
+  background-image: url("../images/contact__background--XS38.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
+  @include mq(small){
+    background-image: url("../images/contact__background--LG.jpg");
+    height: em(1112px);
+  }
+
   h1 {
     text-align: center;
+    margin-top: 25px;
   }
 
   .h1__border {
@@ -185,21 +209,49 @@ nav {
   }
 
   p {
-    padding-left: 70px;
+    color: $color-accent--primary;
+
+    @include mq(small) {
+      padding-left: 70px;
+      color: $color-base;
+    }
   }
 
   svg {
     width: 100%;
     position: relative;
-    bottom: em(200px);
+    bottom: em(235px);
+
+    @include mq(small) {
+      height: 740px;
+    }
   }
 
   .align--right {
-    padding-right: 10px;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 0;
+    width: 320px;
+    margin: 0 auto;
+    float: none;
+
+    @include mq(small){
+      padding-right: 0;
+      padding-top: 0;
+      padding-left: 20px;
+      text-align: right;
+      float: left;
+      width: 350px;
+      position: relative;
+      left: 25px;
+    }
+
   }
 
   .align--left {
-    padding-left: 10px;
+    @include mq(small){
+      padding-left: 45px;
+    }
   }
 }
 
@@ -208,11 +260,12 @@ nav {
   margin: 0 auto;
   max-width: 756px;
   width: 90%;
+  height: 400px;
 
   a {
     display: block;
     height: 48.5px;
-    width: 229px;
+    width: 209px;
     border: 2pt solid $color-accent--primary;
     color: $color-accent--secondary;
     text-transform: uppercase;
@@ -220,7 +273,21 @@ nav {
     padding: 12px 0;
     letter-spacing: 3px;
     font-weight: $font-weight--bold;
-    margin-top: 4px;
+    margin-top: 25px;
+
+    @include mq(small) {
+      margin-top: 4px;
+    }
+  }
+}
+
+.toFront {
+  z-index: 100;
+  position: relative;
+  top: 150px;
+
+  @include mq(small) {
+    top: 340px;
   }
 }
 
@@ -230,8 +297,8 @@ nav {
 
 .showmap {
     margin: auto;
-    width: 224px;
-    height: 234px;
+    width: 230px;
+    height: 254px;
     border: 1px solid #fff;
 }
 
@@ -239,15 +306,24 @@ nav {
 
 #footer {
   background-color: $color-accent--secondary;
-  color: #fff;
   text-align: center;
   height: 61px;
+  padding: 15px 0;
 
-  p {
-    padding-top: 22px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-size: em(14px);
+  #github {
+    fill: #fff;
+    height: auto;
+
+    &:hover {
+      fill: $color-base--light;
+    }
+  }
+}
+
+.social {
+  svg {
+    width: 30px;
+    height: 30px;
 
   }
 }

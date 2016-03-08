@@ -21,7 +21,6 @@ h1 {
 
   @include mq(small) {
     font-size: em(51px);
-    text-align: inherit;
   }
 }
 
@@ -38,6 +37,10 @@ h2 {
   }
 
   @include mq(medium) {
+    font-size: em(45px);
+  }
+
+  @include mq(large) {
     font-size: em(51px);
   }
 }
@@ -46,10 +49,23 @@ h3 {
   font-size: em(33px);
   color: $color-accent--primary;
   font-family: $font-family--script;
-  margin-top: 40px;
+  margin-top: 30px;
 
   &.optical--left {
     margin-left: -3px;
+  }
+
+  @include mq(medium) {
+    margin-top: 40px;
+  }
+}
+
+#resources dl,
+#resources h3 {
+  text-align: center;
+
+  @include mq(small) {
+    text-align: inherit;
   }
 }
 

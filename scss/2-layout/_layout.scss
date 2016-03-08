@@ -5,16 +5,42 @@
   border: 1px solid $color-base--light;
   background-color: $color-base--light;
   position: absolute;
-  left: 49.65%;
+  margin: 0 auto;
+  display: inline;
+  text-align: center;
 
   &--top {
     top: 990px;
+
+    @include mq (small) {
+      left: 49.35%;
+    }
+
+    @include mq (medium) {
+      left: 49.45%;
+    }
+
+    @include mq (large) {
+      left: 49.65%;
+    }
   }
 
   &--bottom {
-    top: 5390px;
-  }
+    @include mq (small) {
+      top: 6032px;
+      left: 49.3%;
+    }
 
+    @include mq (medium) {
+      top: 5780px;
+      left: 49.4%;
+    }
+
+    @include mq (large) {
+      top: 5446px;
+      left: 49.6%;
+    }
+  }
 }
 
 .divider {
@@ -25,12 +51,16 @@
   left: 50%;
   top: 1000px;
 
+  @include mq (small) {
+    height: 5030px;
+  }
+
   @include mq (medium) {
-    height: 4900px;
+    height: 4790px;
   }
 
   @include mq (large) {
-    height: 4400px;
+    height: 4460px;
   }
 }
 
@@ -43,7 +73,7 @@
   z-index: 200;
   background-color: #fff;
   max-width: 948px;
-  width: 96%;
+  width: 90%;
 
   @include mq(small){
     margin: 100px auto;
@@ -51,17 +81,28 @@
 }
 
 .align--right {
+  max-width: 480px;
   text-align: left;
+  margin: 0 auto;
+  text-align: center;
 
   @include mq(small) {
     text-align: right;
     padding-right: 50px;
+    max-width: none;
   }
 }
 
 .align--left {
+  max-width: 480px;
+  margin: 0 auto;
+  float: none;
+
   @include mq(small) {
     padding-left: 50px;
+    text-align: left;
+    float: left;
+    max-width: none;
   }
 }
 
@@ -99,12 +140,6 @@
 
 .col--top {
   margin-top: 0;
-}
-
-.toFront {
-  z-index: 100;
-  position: relative;
-  top: 320px;
 }
 
 #about,
