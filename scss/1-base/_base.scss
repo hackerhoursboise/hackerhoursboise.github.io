@@ -1,0 +1,76 @@
+@import "_config.scss";
+@import "_utilities.scss";
+
+// Base Styles ==============================
+
+body {
+  font-size: $base__font-size;
+  line-height: ($base__line/$base__font-size);
+  font-family: $font-family--primary;
+  font-weight: $font-weight--regular;
+  background-color: #fff;
+  color: $color-base;
+}
+
+h1 {
+  font-size: em(43px);
+  font-weight: $font-weight--bold;
+  color: $color-accent--primary;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include mq(small) {
+    font-size: em(51px);
+  }
+}
+
+h2 {
+  font-size: em(30px);
+  font-weight: $font-weight--bold;
+  color: $color-accent--primarylight;
+  text-transform: uppercase;
+  line-height: 1.5;
+  padding-bottom: 20px;
+
+  @include mq(small) {
+    font-size: em(38px);
+  }
+
+  @include mq(medium) {
+    font-size: em(45px);
+  }
+
+  @include mq(large) {
+    font-size: em(51px);
+  }
+}
+
+h3 {
+  font-size: em(33px);
+  color: $color-accent--primary;
+  font-family: $font-family--script;
+  margin-top: 30px;
+
+  &.optical--left {
+    margin-left: -3px;
+  }
+
+  @include mq(medium) {
+    margin-top: 40px;
+  }
+}
+
+#resources dl,
+#resources h3 {
+  text-align: center;
+
+  @include mq(small) {
+    text-align: inherit;
+  }
+}
+
+dt {
+  font-size: em(18px);
+  color: $color-accent--primary;
+  font-weight: $font-weight--bold;
+}
