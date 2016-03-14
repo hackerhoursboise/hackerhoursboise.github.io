@@ -1,0 +1,149 @@
+.terminal {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid $color-base--light;
+  background-color: $color-base--light;
+  position: absolute;
+  margin: 0 auto;
+  display: inline;
+  text-align: center;
+
+  &--top {
+    top: 990px;
+
+    @include mq (small) {
+      left: 49.35%;
+    }
+
+    @include mq (medium) {
+      left: 49.45%;
+    }
+
+    @include mq (large) {
+      left: 49.65%;
+    }
+  }
+
+  &--bottom {
+    @include mq (small) {
+      top: 6032px;
+      left: 49.3%;
+    }
+
+    @include mq (medium) {
+      top: 5780px;
+      left: 49.4%;
+    }
+
+    @include mq (large) {
+      top: 5446px;
+      left: 49.6%;
+    }
+  }
+}
+
+.divider {
+  width: 0;
+  border-right: 2px dashed $color-base--light;
+  height: 5600px;
+  position: absolute;
+  left: 50%;
+  top: 1000px;
+
+  @include mq (small) {
+    height: 5030px;
+  }
+
+  @include mq (medium) {
+    height: 4790px;
+  }
+
+  @include mq (large) {
+    height: 4460px;
+  }
+}
+
+.intro__image {
+  border: 2pt solid $color-base--light;
+  padding: em(10px);
+  display: block;
+  margin: 100px auto 40px;
+  position: relative;
+  z-index: 200;
+  background-color: #fff;
+  max-width: 948px;
+  width: 90%;
+
+  @include mq(small){
+    margin: 100px auto;
+  }
+}
+
+.align--right {
+  max-width: 480px;
+  text-align: left;
+  margin: 0 auto;
+  text-align: center;
+
+  @include mq(small) {
+    text-align: right;
+    padding-right: 50px;
+    max-width: none;
+  }
+}
+
+.align--left {
+  max-width: 480px;
+  margin: 0 auto;
+  float: none;
+
+  @include mq(small) {
+    padding-left: 50px;
+    text-align: left;
+    float: left;
+    max-width: none;
+  }
+}
+
+.h1__border {
+  width: 287px;
+  height: 102px;
+  border-top: 2px solid $color-accent--secondary;
+  border-bottom: 2px solid $color-accent--secondary;
+
+  @include mq(small){
+    margin-bottom: 30px;
+    height: 112px;
+  }
+}
+
+.float--right {
+  margin: 0 auto 30px;
+  padding: 5px 0 0 0;
+
+  @include mq(small) {
+    margin-left: 100%;
+    float: right;
+  }
+}
+
+.float--left {
+  margin: 0 auto 30px;
+  padding: 5px 0 0 0;
+
+  @include mq(small) {
+    margin-right: 100%;
+    float: left;
+  }
+}
+
+.col--top {
+  margin-top: 0;
+}
+
+#about,
+#resources,
+#projects {
+  padding: 0 20px;
+}
