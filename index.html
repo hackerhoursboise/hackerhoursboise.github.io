@@ -22,6 +22,11 @@
     <!-- Custom styles for this template -->
     <link href="jumbotron-narrow.css" rel="stylesheet">
 
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans:400,800' rel='stylesheet' type='text/css'>
+
+
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
@@ -32,55 +37,223 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-              <link href="stylesheet.css" type="text/css" rel="stylesheet">
+      <!-- <link href="stylesheet.css" type="text/css" rel="stylesheet"> -->
+
+      <!-- CSS from Sass files -->
+      <link href="css/main.css" rel="stylesheet">
   </head>
 
   <body>
 
-    <div class="container">
-      <div class="header clearfix">
-        <nav>
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
-          </ul>
+
+      <!-- Home -->
+      <div id="home">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+          <div class="container">
+              <div class="navbar-header">
+
+                <a class="navbar-brand text-hide hidden-xs" href="#">Hacker Hours Boise</a>
+
+              </div> <!--/.navbar-header -->
+
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div> <!--/.navbar-collapse -->
+          </div> <!--/.container -->
         </nav>
-        <h3>Improve your coding, improve the world</h3>
+
+        <div class="home__graphic">
+          <img src="images/logo--full.png" alt="Hacker Hours Logo">
+          <h1>Learn, Grow, Teach, Code</h1>
+          <h2 id="timer">Weekly meetups: Tuesdays, 6:30 p.m.</h2>
+
+          <svg class="hidden-xs" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          	 viewBox="0 0 798 792" style="enable-background:new 0 0 798 792;" xml:space="preserve">
+              <g id="frame__circle">
+                  <circle style="opacity:0.7;fill:#FFFFFF;" cx="399" cy="396" r="351.58"/>
+                  <circle style="opacity:0.7;fill:none;stroke:#FFFFFF;stroke-width:19;stroke-miterlimit:10;" cx="399" cy="396" r="377.72"/>
+              </g>
+          </svg>
+
+          <a href="http://www.meetup.com/hackerhoursboise/">Join Us!</a>
+
+        </div> <!--/.home__graphic -->
+      </div> <!--/#home -->
+
+        <div class="terminal terminal--top hidden-xs"></div>
+        <div class="divider hidden-xs"></div>
+        <div class="terminal terminal--bottom hidden-xs"></div>
+
+
+      <!-- About -->
+      <div id="about" class= "container">
+        <div class="row">
+          <img class="intro__image" src="images/about__introimage.jpg" alt="Group Photo">
+          <div class="col-sm-6 align--right">
+            <div class="h1__border float--right col-sm-8 col-sm-offset-4">
+              <h1 class="col-xs-12">About</h1>
+            </div>
+            <h2 class="hidden-xs">Free Office<br>Hours for Programming Help in<br>Boise, Idaho</h2>
+          </div> <!--/.col-sm-6 -->
+          <div class="col-xs-12 col-sm-6 col-md-5 align--left">
+            <p><span class="dropcap text-hide">W</span>e're a diverse group of web developers and programmers of varying skill levels. We meet up to learn, to teach and to help each other with projects. We believe even advanced developers can learn from beginners in the fast-moving world of development—everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to teach and learn so come on down!</p>
+            <h3 class="optical--left">Why Code?</h3>
+            <p>We believe even advanced developers can learn from beginners in the fast-moving world of development—everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to learn.</p>
+            <h3 class="optical--left">The Boise Code Community</h3>
+            <p>We believe even advanced developers can learn from beginners in the fast-moving world of development—everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to learn.</p>
+          </div> <!--/.col-sm-5 -->
+        </div> <!--/.row -->
+      </div> <!--/#about .container -->
+
+
+      <!-- Resources -->
+      <div id="resources" class= "container">
+        <div class="row">
+          <img class="intro__image" src="images/resources__introimage.jpg" alt="Close-up of hands on a laptop coding.">
+          <div class="col-sm-5 col-sm-push-6 align--left">
+            <div class="h1__border float--left">
+              <h1>Resources</h1>
+            </div>
+            <h2 class="hidden-xs">Beef Up Your Coding Skills Online at Your Own Pace, on Your Own Time</h2>
+          </div> <!--/.col-sm-5 -->
+          <div class="col-sm-5 col-sm-pull-4 align--right">
+            <h3 class="col--top">Beginners</h3>
+            <dl>
+              <a href="https://teamtreehouse.com"><dt>Treehouse</dt></a>
+              <dd>Available through the Boise Library for free</br></dd>
+              
+              <a href="https://www.codecademy.com/"><dt>CodeCademy</dt></a>
+              <dd>Online classes in various languages,</br>
+                  earn badges as you go!</dd>
+              <a href="http://www.freecodecamp.com/"><dt>Freecodecamp</dt></a>
+              <dd>Online challenges and courses</br></dd>
+            </dl>
+            <h3>Intermediate</h3>
+            <dl>
+              <a href="http://stackexchange.com/"><dt>Stack Exchange</dt></a>
+              <dd>Search or Ask program related questions</br>
+              </dd>
+              <a href="https://news.ycombinator.com/"><dt>Hacker News</dt></a>
+              <dd>News and Information for software developers</br>
+                  </dd>
+              <a href="https://www.edx.org/course"><dt>edX</dt></a>
+              <dd>
+                  edX is an online learning destination and MOOC provider, offering high-quality courses from the world’s best universities and institutions to learners everywhere.</dd>
+            </dl>
+            <h3>Advanced</h3>
+            <dl>
+              <a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/"><dt>MIT OpenCourseWare</dt></a>
+              <dd>MIT OpenCourseWare (OCW) is a web-based publication of virtually all MIT course content. OCW is open and available to the world and is a permanent MIT activity.</br>
+                  </dd>
+              <a href="http://online.stanford.edu/courses"><dt>Stanford</dt></a>
+              <dd>Stanford Online offers a variety of professional education opportunities in conjunction with many of the University’s schools and departments, and free online courses taught by Stanford faculty to lifelong learners worldwide.</br>
+                </dd>
+            </dl>
+          </div> <!--/.col-sm-5 -->
+        </div> <!--/.row -->
+      </div> <!--/#resources .container -->
+
+
+      <!-- Projects -->
+      <div id="projects" class= "container">
+        <div class="row">
+          <img class="intro__image" src="images/projects__introimage.jpg" alt="Close-up of hands on a laptop coding.">
+          <div class="col-sm-6 align--right">
+            <div class="h1__border float--right col-sm-8 col-sm-offset-4">
+              <h1>Projects</h1>
+            </div>
+            <h2 class="hidden-xs">Ready for Some Action? Help Us Tackle One of Our Team Projects</h2>
+          </div> <!--/.col-sm-6 -->
+          <div class="col-sm-5 align--left">
+            <p><span class="dropcap text-hide">O</span>ne of our goals at Hacker Hours is to put our coding skills to use. We’re always looking for contributors, as well as ideas for new projects for non-profits or other good causes. If you’d like to join one of our projects listed below, or have an idea for a new project, please contact us.</p>
+            <h3>Hacker Hours Website</h3>
+            <dl>
+              <dt>Description</dt>
+              <dd>We’re building the official website for Hacker Hours in Boise.
+              <dt>Skills Needed</dt>
+              <dd>The site is beingt built using a combination of HTML5, CSS3, JavaScript, jQuery, and the Bootstrap framework.</dd>
+            </dl>
+            <h3>StartUp</h3>
+            <dl>
+              <dt>Description</dt>
+              <dd>Learning the ins and outs of collaboration and team tools while working on startup ideas and goals.
+              <dt>Skills Needed</dt>
+              <dd>Any ideas are welcome</dd>
+            </dl>
+            <h3>Future Project #2</h3>
+            <dl>
+              <dt>Description</dt>
+              <dd>We’re building the official website for Hacker Hours in Boise.
+              <dt>Skills Needed</dt>
+              <dd>The site is beingt built using a combination of HTML5, CSS3, JavaScript, jQuery, and the Bootstrap framework.</dd>
+            </dl>
+          </div> <!--/.col-sm-5 -->
+        </div> <!--/.row -->
+      </div> <!--/#projects .container -->
+
+
+      <!-- Contact -->
+      <div id="contact">
+        <div class="contact__graphic">
+
+          <div class="row toFront">
+            <div class="h1__border">
+              <h1>Contact</h1>
+            </div>
+            <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 align--right">
+              <h3 class="col--top">Come Hang Out!</h3>
+              <p>As of now the most convenient way for us to organize events and recruit new members is through our Meetup group. We meet <span class="highlight">Tuesday evenings from 6:30–9:30 pm. at the Boise Public Library</span> on Capitol.</p>
+              <a href="http://www.meetup.com/hackerhoursboise/" class="float--right">Let's Meetup!</a>
+            </div> <!--/.col-sm-6 -->
+            <div class="col-sm-5 align--left">
+              <div class="showmap hidden-xs">
+                <iframe class="showmap" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d9717.171696929057!2d-116.21336003912891!3d43.60794848792351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x54aef8e4a14f7779%3A0xaab9a20d60c58679!2sboise+public+library!3m2!1d43.6106227!2d-116.2077284!5e0!3m2!1sen!2sus!4v1450838794184"></iframe>
+              </div>
+            </div> <!--/.col-sm-5 -->
+          </div> <!--/.row .toFront-->
+          <svg class="hidden-xs" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 798 792" style="enable-background:new 0 0 798 792;" xml:space="preserve">
+              <g id="frame__circle">
+                  <circle style="opacity:0.7;fill:#FFFFFF;" cx="399" cy="396" r="351.58"/>
+                  <circle style="opacity:0.7;fill:none;stroke:#FFFFFF;stroke-width:19;stroke-miterlimit:10;" cx="399" cy="396" r="377.72"/>
+              </g>
+          </svg>
+
+        </div> <!--/.contact__graphic -->
+      </div> <!--/#contact -->
+
+
+      <!-- Footer -->
+      <div id="footer">
+        <!-- GitHub -->
+        <div class="social">
+          <a href="https://github.com/hackerhoursboise">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="0 0 47.17 46.17" style="enable-background:new 0 0 47.17 46.17;" xml:space="preserve">
+              <g id="github">
+                      <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M23.58,0.61c-12.72,0-23.04,10.31-23.04,23.04
+                          c0,10.18,6.6,18.81,15.76,21.86c1.15,0.21,1.57-0.5,1.57-1.11c0-0.55-0.02-2-0.03-3.92c-6.41,1.39-7.76-3.09-7.76-3.09
+                          c-1.05-2.66-2.56-3.37-2.56-3.37c-2.09-1.43,0.16-1.4,0.16-1.4C9.99,32.79,11.21,35,11.21,35c2.06,3.52,5.39,2.5,6.7,1.91
+                          c0.21-1.49,0.8-2.5,1.46-3.08c-5.12-0.58-10.49-2.56-10.49-11.39c0-2.51,0.9-4.57,2.37-6.18c-0.24-0.58-1.03-2.93,0.23-6.1
+                          c0,0,1.93-0.62,6.34,2.36c1.84-0.51,3.81-0.77,5.77-0.78c1.96,0.01,3.93,0.26,5.77,0.78c4.4-2.98,6.33-2.36,6.33-2.36
+                          c1.26,3.17,0.47,5.51,0.23,6.1c1.48,1.61,2.37,3.67,2.37,6.18c0,8.85-5.39,10.8-10.52,11.37c0.83,0.71,1.56,2.12,1.56,4.27
+                          c0,3.08-0.03,5.56-0.03,6.32c0,0.62,0.41,1.33,1.58,1.11c9.15-3.05,15.74-11.68,15.74-21.86C46.62,10.93,36.31,0.61,23.58,0.61z"
+                          />
+              </g>
+            </svg>
+          </a>
+        </div> <!--/.size -->
       </div>
 
-      <div class="jumbotron" background-color="#FF8A00">
-          <div class="container"></div>
-        <h2>Hacker Hours Boise: Learn, teach, grow</h2>
-          <img src="images/group_1.jpg" id="groupshot"></img>
-        <p class="lead">Main library 715 S. Capitol Blvd. Boise, ID 83702</p>
-          <div id="intro"> We're a diverse group of web developers and programmers of varying skill levels. We meet up to learn, to teach and to help each other with projects. We believe even advanced developers can learn from beginners and in the fast-moving world of development, everyone is a perpetual beginner at something. Most of us are working toward greater competence in JavaScript, C#, .NET, MVC frameworks (Angular, etc.), backend languages (PHP, MySQL, Node) and really anything. Everyone, regardless of level, has something valuable to teach and learn so come on down!</div></p>
-        <p><a class="btn btn-lg btn-success" role="button" id="meetbutton" href="http://www.meetup.com/hackerhoursboise/">Find us on Meetup also!</a></p>
-      </div>
-    <div class="daycontent">
-        <h4>Regular meetings</h4>
-          <p>Every Tuesday from 6:30 to 9 p.m., Boise Public Library downtown branch</p>
-        <script>getTime();</script>
-        <div id="timer"></div>
-        <div class="content"></div>
-            <div class="showmap">
-<iframe class="showmap" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d9717.171696929057!2d-116.21336003912891!3d43.60794848792351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x54aef8e4a14f7779%3A0xaab9a20d60c58679!2sboise+public+library!3m2!1d43.6106227!2d-116.2077284!5e0!3m2!1sen!2sus!4v1450838794184"></iframe>
-        </div>
-          <h4>Organizers</h4>
-          <p>Craig Kofoed, Organizer and Dave Hooper, Co-Organizer</p>
-        </div>
-        <div class="col-lg-6">
-      <footer class="footer">
-</div>
-      </div>           
-      
-      </footer>
-
-    </div> <!-- /container -->
-
-
+    <script>getTime();</script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-

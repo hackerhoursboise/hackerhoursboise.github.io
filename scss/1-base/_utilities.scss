@@ -1,0 +1,13 @@
+// Calculate Em Values ==============================
+
+@function em($target, $context: $base__font-size) {
+  @return ($target / $context) *1em;
+}
+
+// Outline in Browser to Debug ==============================
+
+@mixin debug ($hue: red) {
+    border-color: $hue;
+    border-width: 1px;
+    border-style: solid;
+}

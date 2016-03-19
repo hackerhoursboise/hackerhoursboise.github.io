@@ -1,0 +1,330 @@
+// Navigation ==============================
+
+nav {
+  padding: em(15px) em(15px);
+  position: relative;
+  z-index: 1000;
+
+  @include mq(small) {
+    padding: em(25px) 0;
+  }
+}
+
+.navbar-nav li a {
+    color: #fff;
+    font-size: em(14px);
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-accent--primary;
+      background-color: initial;
+    }
+
+    &:focus {
+      background: none;
+    }
+}
+
+
+.navbar-brand {
+  display: block;
+  background-image: url("../images/logo--iconSprite.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: em(37px);
+  position: relative;
+  top: 7px;
+  left: 15px;
+  height: 31px;
+  width: 37px;
+  margin: 0 auto;
+
+   &:hover {
+          background-position: center bottom;
+   }
+}
+
+
+
+
+// Home ==============================
+
+#home {
+  height: em(900px);
+  background-image: url("../images/home__background--LG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include mq(small){
+    height: em(1112px);
+  }
+
+  .home__graphic {
+    position: relative;
+    margin: 0 auto;
+    max-width: 756px;
+    width: 100%;
+    bottom: 320px;
+    height: 800px;
+    // top: 50px;
+
+    @include mq(small){
+      bottom: 130px;
+    }
+
+    a {
+      display: block;
+      margin: 0 auto;
+      height: 48.5px;
+      width: 229px;
+      border: 2pt solid $color-accent--primary;
+      color: $color-accent--secondary;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 12px 0;
+      letter-spacing: 3px;
+      font-weight: $font-weight--bold;
+      position: relative;
+      top: 335px;
+      z-index: 500;
+
+      @include mq(small) {
+        top: -420px;
+
+      }
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 360px;
+    z-index: 100;
+    width: 200px;
+
+    @include mq(small) {
+      top: 340px;
+      width: 220px;
+    }
+  }
+
+  h1 {
+    font-family: $font-family--script;
+    text-transform: none;
+    font-size: em(32px);
+    text-align: center;
+    position: relative;
+    top: 340px;
+    z-index: 100;
+    padding-top: 20px;
+
+    @include mq(small) {
+      font-size: em(36px);
+    }
+  }
+
+  h2 {
+    font-size: em(16px);
+    font-weight: $font-weight--regular;
+    text-transform: uppercase;
+    color: $color-accent--primary;
+    text-align: center;
+    z-index: 100;
+    position: relative;
+    top: 340px;
+
+    @include mq(small) {
+      font-size: em(18px);
+      letter-spacing: 3px;
+    }
+
+    span {
+      color: $color-accent--secondary;
+      font-weight: $font-weight--bold;
+    }
+  }
+
+  svg {
+    min-width: 716px;
+    position: relative;
+    bottom: em(200px);
+
+    @include mq(small){
+      width: 100%;
+      right: inherit;
+    }
+  }
+}
+
+// Dropcaps ==============================
+
+#about {
+  .dropcap {
+    display: block;
+    float: left;
+    height: 82px;
+    width: 94px;
+    background-image: url("../images/about__dropcap.png");
+    background-repeat: no-repeat;
+  }
+}
+
+#projects {
+  .dropcap {
+    display: block;
+    float: left;
+    height: 82px;
+    width: 73px;
+    background-image: url("../images/projects__dropcap.png");
+    background-repeat: no-repeat;
+  }
+}
+
+// Contact ==============================
+
+#contact {
+  margin-top: 150px;
+  height: em(700px);
+  background-image: url("../images/contact__background--XS38.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include mq(small){
+    background-image: url("../images/contact__background--LG.jpg");
+    height: em(1112px);
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .h1__border {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  p {
+    color: $color-accent--primary;
+
+    @include mq(small) {
+      padding-left: 70px;
+      color: $color-base;
+    }
+  }
+
+  svg {
+    width: 100%;
+    position: relative;
+    bottom: em(235px);
+
+    @include mq(small) {
+      height: 740px;
+    }
+  }
+
+  .align--right {
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 0;
+    width: 320px;
+    margin: 0 auto;
+    float: none;
+
+    @include mq(small){
+      padding-right: 0;
+      padding-top: 0;
+      padding-left: 10px;
+      text-align: right;
+      float: left;
+      width: 350px;
+      position: relative;
+      left: 25px;
+    }
+
+  }
+
+  .align--left {
+    @include mq(small){
+      padding-left: 45px;
+    }
+  }
+}
+
+.contact__graphic {
+  position: relative;
+  margin: 0 auto;
+  max-width: 756px;
+  width: 90%;
+  height: 400px;
+
+  a {
+    display: block;
+    height: 48.5px;
+    width: 209px;
+    border: 2pt solid $color-accent--primary;
+    color: $color-accent--secondary;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px 0;
+    letter-spacing: 3px;
+    font-weight: $font-weight--bold;
+    margin-top: 25px;
+
+    @include mq(small) {
+      margin-top: 4px;
+    }
+  }
+}
+
+.toFront {
+  z-index: 100;
+  position: relative;
+  top: 150px;
+  right: 15px;
+
+  @include mq(small) {
+    top: 340px;
+  }
+}
+
+.highlight {
+  font-weight: $font-weight--bold;
+}
+
+.showmap {
+    margin: auto;
+    width: 230px;
+    height: 254px;
+    border: 1px solid #fff;
+}
+
+// Footer ==============================
+
+#footer {
+  background-color: $color-accent--secondary;
+  text-align: center;
+  height: 61px;
+  padding: 15px 0;
+
+  #github {
+    fill: #fff;
+    height: auto;
+
+    &:hover {
+      fill: $color-base--light;
+    }
+  }
+}
+
+.social {
+  svg {
+    width: 30px;
+    height: 30px;
+
+  }
+}
