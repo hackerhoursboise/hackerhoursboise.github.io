@@ -1,8 +1,31 @@
+
+/**
+  Main. Put starting code here.
+*/
+$(document).ready(function() {
+  lazyLoad("home");
+});
+
 function getTime(){
  var apiTime = $.getJSON('https://api.meetup.com/2/events?offset=0&format=json&limited_events=False&group_urlname=hackerhoursboise&only=time&photo-host=public&page=1&fields=&order=time&desc=false&status=upcoming&sig_id=4397595&sig=d0f2e99cd0a29d2587e937191612dcc0c903c5ba&callback=?')
 
  	apiTime.done(countDown).fail(handleErr);
 
+}
+
+/**
+ * Loads in the big photo, then assigns it to the background image
+ * of toID.
+ * @param  {String} toID
+ */
+function lazyLoad(toID) {
+  //Before we do anything at all, load in the photo
+  var smallImageElement = document.getElementById(toID);
+  var bigImageLoader    = new Image();
+  bigImageLoader.onload = function() {
+    smallImageElement.style.backgroundImage = "url(" + this.src + ")";
+  };
+  bigImageLoader.src    = "../images/home__background--LG.jpg";
 }
 
 
